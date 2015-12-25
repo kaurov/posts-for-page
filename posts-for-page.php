@@ -204,7 +204,7 @@ function sc_posts_for_page($atts, $content = null){
 			{
 				if($_opts['hide_images'] != 'true')
 				{
-					$output .= $imageSrc;
+					$output .= "<a href='$link' class='thumb'>" . $imageSrc . "</a>";
 				}
 				$output .= $content;
                 if( ($_opts['hide_read_more'] != 'true'))
